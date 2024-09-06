@@ -1,5 +1,5 @@
 class ListsController < ApplicationController
-  
+
   def new
     @list = List.new
   end
@@ -43,5 +43,5 @@ class ListsController < ApplicationController
   def list_params
     params.require(:list).permit(:title, :body, :image)
   end
-  
+
 end
